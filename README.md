@@ -1,2 +1,2 @@
 # LearnJS
-Learning Javascript and Node
+Learning Javascript and Node.js
