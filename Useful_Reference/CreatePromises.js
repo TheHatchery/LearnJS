@@ -8,10 +8,11 @@ function setup() {
 function delay(time){
   return new Promise(resolve=>{
     setTimeout(resolve, time);
+    //Once the timer has run the resolve fuction runs which then allowes the delay function to return the Promise 
   })
 }
 
-let data;
+let data; //Global Variable - to be able to use later for the return
 function loadingFile(){
   return new Promise(resolve=>{
     createFileInput(fileSelected);
@@ -19,18 +20,15 @@ function loadingFile(){
       console.log('File Loaded');
       data = file.data;
         if (data.length > 0){
-        //Return a successful Promise 
-        resolve('File Loaded'); 
-          //Return the loaded data to the async function
-          //console.log(data);
-          return data;
+        //Return a successful Promise along with the data variable
+        resolve(data); 
+        //resolve function argument becomes the data variable which is then returned by the loadingFile function with the Promise
         }
     }
   })
 }
 
 async function test(){
-  //let data; //To be able to use later for the return
 
   //Just a random wait for no reason
   await delay(2000);
@@ -46,4 +44,8 @@ async function test(){
   console.log(data);
 
 }
+
+
+
+
 
