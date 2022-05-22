@@ -17,18 +17,15 @@ function loadingFile(){
   return new Promise(resolve=>{
     createFileInput(fileSelected);
     function fileSelected (file){
-      console.log('File Loaded');
+      //This is a callback function that only runs when the         file is loaded - file variable becomes the uploaded file
       data = file.data;
-        if (data.length > 0){
-        //Return a successful Promise along with the data variable
-        resolve(data); 
-        //resolve function argument becomes the data variable which is then returned by the loadingFile function with the Promise
-        }
+      resolve(data);
     }
   })
 }
 
 async function test(){
+  createP('Just some waiting about... wont be long')
 
   //Just a random wait for no reason
   await delay(2000);
@@ -37,11 +34,24 @@ async function test(){
   //Another random wait for no reason
   await delay(2000);
   console.log('Success Again');
+  createP('Choose A File Using the Selector Below')
 
   //Waits for the user to select a file and it load
   await loadingFile();
   //Show whats in the file in the console
-  console.log(data);
+  createP('This is your file data:')
+  createP(data);
+
+  textInput = createInput();
+  textInput.changed(newText);
+  function newText(){
+    textVal = textInput.value();
+    createP(textVal);
+    let wordLength = textVal.length;
+    createP(`The word ${textVal} is ${wordLength} letters long`);
+  
+  }
+  
 
 }
 
