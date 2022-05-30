@@ -4,6 +4,7 @@ canvas {
 
 html, body {
   height: 100%;
+  background: black;
 }
 
 html {
@@ -14,4 +15,9 @@ html {
 body {
   display: table-cell;
   vertical-align: middle;
+  color: rgb(255,255,255);
+}
+
+p {
+     color: rgb(255,255,255);
 }
