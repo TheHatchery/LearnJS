@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    font-weight: thin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 15px;
+    background-color: rgb(56,106,122);
+}
+
+h1 {
+    font-weight: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-weight: normal;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+input{
+
+    color: rgb(105,102,102);
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 20px;
+    width: 190px;
+  
+}
+
+
+
+.timeWrapper{
+  background: rgb(3,65,85);
+  opacity: 80%;
+  border: 1px solid rgb(255,255,255);
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.big-text {
+    font-weight: bold;
+    color: white;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.3rem;
+    color: white;
+}

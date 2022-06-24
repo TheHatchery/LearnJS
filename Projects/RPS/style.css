@@ -1,0 +1,32 @@
+canvas {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  background: black;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+
+p {
+     color: rgb(255,255,255);
+  font-size: 25px;
+      
+}
+
+button {
+            background-color: white;
+            text-align: center;
+            font-size: 55px;
+}
