@@ -57,8 +57,7 @@ input{
 
 
 .timeWrapper{
-  background: rgb(3,65,85);
-  opacity: 80%;
+  background: rgb(3,65,85,0.5);
   border: 1px solid rgb(255,255,255);
   padding: 30px;
   margin-top: 30px;

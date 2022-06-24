@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+div{
+    display: flex;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(161, 160, 171);
+    min-height: 1rem;
+    flex-grow: 1;
+}
+button{
+    display: flex;
+}
+
+.grandparent{
+    background-color: rgb(70, 70, 74,0.5);
+    flex-direction:column;
+}
+.parent{
+    background-color: rgb(85, 103, 112);
+    padding: 0.25rem;
+
+
+}
+.child{
+    background-image: url("https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80");
+    background-size: cover;
+    min-height: 150px;
+    cursor: pointer;
+
+}
