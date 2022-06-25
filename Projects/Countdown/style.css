@@ -6,7 +6,7 @@
 }
 
 #body {
-    background-image: url("https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80");
+    background-image: url("https://images.unsplash.com/photo-1617265859824-46910d1ad447?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1682&q=80");
     background-size: auto 120vh;
     background-repeat:repeat;
     display:flex; /* Same again to centre span inside */
@@ -36,14 +36,15 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 1rem;
 }
 h2 {
     font-weight: normal;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
+    text-align: center;
 }
 input{
     color: rgb(105,102,102);
@@ -57,7 +58,9 @@ input{
   border: 1px solid rgb(255,255,255);
   padding: 30px;
   margin-top: 30px;
-  max-height: 300px;
+  max-height: 350px;
+  max-width: 390px;
+  min-width: 390px
 }
 .countdown-container {
     display: flex;
@@ -67,19 +70,24 @@ input{
 .big-text {
     font-weight: bold;
     color: white;
-    font-size: 6rem;
+    font-size: 3.5rem;
     line-height: 1;
-    margin: 1rem 2rem;
+    margin: 1rem;
 }
 .countdown-el {
     text-align: center;
 }
 .countdown-el span {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: white;
 }
 
-
+.pageWrapper{
+    display:flex;
+    justify-content: center; /* Items inside horizontally */
+    align-items: center; /* Items inside vertically */
+    flex-direction: column;
+}
 
 .ImgChoiceWrapper{
     display:flex; /* Flex Box */
@@ -105,6 +113,9 @@ input{
     background-size: cover;
     cursor: pointer;  
 }
+
+
+
 #id0{
     
     background-size: cover;

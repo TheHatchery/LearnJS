@@ -1,0 +1,47 @@
+body{
+    display:flex; /* Flex Box */
+    justify-content: center; /* Items inside horizontally */
+    align-items: center;
+}
+
+div{
+    margin: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: grey;
+}
+span{
+    color: rgb(255, 255, 255);
+}
+
+.wrapper{
+    display:flex; /* Flex Box */
+    justify-content: center; /* Items inside horizontally */
+    align-items: center; /* Items inside vertically */
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    min-height: 180px;
+}
+
+.inner{
+    display:flex; /* Same again to centre span inside */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 150px;
+    width: 230px;
+    background-image: url("https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3570&q=80");
+    background-size: cover;
+    cursor: pointer;  
+}
+
+.one{
+
+}
+
+.two{
+
+}
+
+.three{
+
+}
