@@ -85,26 +85,3 @@ const runTime = async () =>{
     finalCountdown(startValues.one,startValues.two);
 }
 runTime();
-
-
-
-        
-
-
-
-    
-
-            
-        
- 
-
-
-
-
-
-////-- Ignor just some usefull bits learnt but not needed --////
-////--> Returns the field value as you type
-// const inputHTML = document.getElementById('title')
-// inputHTML.addEventListener('input', (evt) => {
-//     console.log(inputHTML.value);
-// });
