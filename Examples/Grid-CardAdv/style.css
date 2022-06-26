@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    border: 1px solid black;
+    
+    background-size: auto 50vh;
+}
+
+.card:hover{
+    transform: translateY(-3px) scale(1.1);
+}
+
+.photo-grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Also and auto-fill*/ 
+    grid-auto-rows: 180px;
+}
+
+@media screen and (min-width: 600px){
+    .card-tall{
+        grid-row: span 2/auto;
+    }
+
+    .card-wide{
+        grid-column: span 2/auto;
+    }
+}
