@@ -1,0 +1,53 @@
+body{
+    display:flex; /* Flex Box */
+    justify-content: center; /* Items inside horizontally */
+    align-items: center;
+}
+
+div{
+    margin: 10px;
+    background-color: grey;
+    color: white;
+}
+
+.wrapper{
+    display:flex; /* Flex Box */
+    justify-content: center; /* Items inside horizontally */
+    align-items: center; /* Items inside vertically */
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.inner{
+    display:flex; /* Same again to centre span inside */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 50px;
+    background-color: rgb(150, 156, 202);
+    text-align: center;
+    width: 230px;
+    
+}
+.button{
+    
+}
+
+#topButtonA{
+    display:none; /* Same again to centre span inside */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 40px;
+    background-color: rgb(150, 180, 202);
+    text-align: center;
+    width: 230px;
+}
+#bottomButtonA{
+    display:none; /* Same again to centre span inside */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 40px;
+    background-color: rgb(150, 180, 202);
+    text-align: center;
+    width: 230px;
+}
